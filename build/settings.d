@@ -1,6 +1,6 @@
 settings.o: \
- /Users/mathiaszajonz/Desktop/oui/switch/hombrew/shop/application/source/settings.cpp \
- /Users/mathiaszajonz/Desktop/oui/switch/hombrew/shop/application/source/app.hpp \
+ /Users/mathiaszajonz/Desktop/oui/switch/hombrew/shop/application/SWITCHOP/source/settings.cpp \
+ /Users/mathiaszajonz/Desktop/oui/switch/hombrew/shop/application/SWITCHOP/source/app.hpp \
  /opt/devkitpro/libnx/include/switch.h \
  /opt/devkitpro/libnx/include/switch/types.h \
  /opt/devkitpro/libnx/include/switch/result.h \
@@ -238,53 +238,53 @@ settings.o: \
  /opt/devkitpro/portlibs/switch/include/curl/multi.h \
  /opt/devkitpro/portlibs/switch/include/curl/curl.h \
  /opt/devkitpro/portlibs/switch/include/curl/urlapi.h \
- /Users/mathiaszajonz/Desktop/oui/switch/hombrew/shop/application/include/nlohmann/json.hpp \
- /Users/mathiaszajonz/Desktop/oui/switch/hombrew/shop/application/include/nlohmann/adl_serializer.hpp \
- /Users/mathiaszajonz/Desktop/oui/switch/hombrew/shop/application/include/nlohmann/detail/abi_macros.hpp \
- /Users/mathiaszajonz/Desktop/oui/switch/hombrew/shop/application/include/nlohmann/detail/conversions/from_json.hpp \
- /Users/mathiaszajonz/Desktop/oui/switch/hombrew/shop/application/include/nlohmann/detail/exceptions.hpp \
- /Users/mathiaszajonz/Desktop/oui/switch/hombrew/shop/application/include/nlohmann/detail/value_t.hpp \
- /Users/mathiaszajonz/Desktop/oui/switch/hombrew/shop/application/include/nlohmann/detail/macro_scope.hpp \
- /Users/mathiaszajonz/Desktop/oui/switch/hombrew/shop/application/include/nlohmann/detail/meta/detected.hpp \
- /Users/mathiaszajonz/Desktop/oui/switch/hombrew/shop/application/include/nlohmann/detail/meta/void_t.hpp \
- /Users/mathiaszajonz/Desktop/oui/switch/hombrew/shop/application/include/nlohmann/thirdparty/hedley/hedley.hpp \
- /Users/mathiaszajonz/Desktop/oui/switch/hombrew/shop/application/include/nlohmann/detail/string_escape.hpp \
- /Users/mathiaszajonz/Desktop/oui/switch/hombrew/shop/application/include/nlohmann/detail/input/position_t.hpp \
- /Users/mathiaszajonz/Desktop/oui/switch/hombrew/shop/application/include/nlohmann/detail/meta/cpp_future.hpp \
- /Users/mathiaszajonz/Desktop/oui/switch/hombrew/shop/application/include/nlohmann/detail/meta/type_traits.hpp \
- /Users/mathiaszajonz/Desktop/oui/switch/hombrew/shop/application/include/nlohmann/detail/iterators/iterator_traits.hpp \
- /Users/mathiaszajonz/Desktop/oui/switch/hombrew/shop/application/include/nlohmann/detail/meta/call_std/begin.hpp \
- /Users/mathiaszajonz/Desktop/oui/switch/hombrew/shop/application/include/nlohmann/detail/meta/call_std/end.hpp \
- /Users/mathiaszajonz/Desktop/oui/switch/hombrew/shop/application/include/nlohmann/json_fwd.hpp \
- /Users/mathiaszajonz/Desktop/oui/switch/hombrew/shop/application/include/nlohmann/detail/string_concat.hpp \
- /Users/mathiaszajonz/Desktop/oui/switch/hombrew/shop/application/include/nlohmann/detail/meta/identity_tag.hpp \
- /Users/mathiaszajonz/Desktop/oui/switch/hombrew/shop/application/include/nlohmann/detail/meta/std_fs.hpp \
- /Users/mathiaszajonz/Desktop/oui/switch/hombrew/shop/application/include/nlohmann/detail/conversions/to_json.hpp \
- /Users/mathiaszajonz/Desktop/oui/switch/hombrew/shop/application/include/nlohmann/detail/iterators/iteration_proxy.hpp \
- /Users/mathiaszajonz/Desktop/oui/switch/hombrew/shop/application/include/nlohmann/detail/string_utils.hpp \
- /Users/mathiaszajonz/Desktop/oui/switch/hombrew/shop/application/include/nlohmann/byte_container_with_subtype.hpp \
- /Users/mathiaszajonz/Desktop/oui/switch/hombrew/shop/application/include/nlohmann/detail/hash.hpp \
- /Users/mathiaszajonz/Desktop/oui/switch/hombrew/shop/application/include/nlohmann/detail/input/binary_reader.hpp \
- /Users/mathiaszajonz/Desktop/oui/switch/hombrew/shop/application/include/nlohmann/detail/input/input_adapters.hpp \
- /Users/mathiaszajonz/Desktop/oui/switch/hombrew/shop/application/include/nlohmann/detail/input/json_sax.hpp \
- /Users/mathiaszajonz/Desktop/oui/switch/hombrew/shop/application/include/nlohmann/detail/input/lexer.hpp \
- /Users/mathiaszajonz/Desktop/oui/switch/hombrew/shop/application/include/nlohmann/detail/meta/is_sax.hpp \
- /Users/mathiaszajonz/Desktop/oui/switch/hombrew/shop/application/include/nlohmann/detail/input/parser.hpp \
- /Users/mathiaszajonz/Desktop/oui/switch/hombrew/shop/application/include/nlohmann/detail/iterators/internal_iterator.hpp \
- /Users/mathiaszajonz/Desktop/oui/switch/hombrew/shop/application/include/nlohmann/detail/iterators/primitive_iterator.hpp \
- /Users/mathiaszajonz/Desktop/oui/switch/hombrew/shop/application/include/nlohmann/detail/iterators/iter_impl.hpp \
- /Users/mathiaszajonz/Desktop/oui/switch/hombrew/shop/application/include/nlohmann/detail/iterators/json_reverse_iterator.hpp \
- /Users/mathiaszajonz/Desktop/oui/switch/hombrew/shop/application/include/nlohmann/detail/json_custom_base_class.hpp \
- /Users/mathiaszajonz/Desktop/oui/switch/hombrew/shop/application/include/nlohmann/detail/json_pointer.hpp \
- /Users/mathiaszajonz/Desktop/oui/switch/hombrew/shop/application/include/nlohmann/detail/json_ref.hpp \
- /Users/mathiaszajonz/Desktop/oui/switch/hombrew/shop/application/include/nlohmann/detail/output/binary_writer.hpp \
- /Users/mathiaszajonz/Desktop/oui/switch/hombrew/shop/application/include/nlohmann/detail/output/output_adapters.hpp \
- /Users/mathiaszajonz/Desktop/oui/switch/hombrew/shop/application/include/nlohmann/detail/output/serializer.hpp \
- /Users/mathiaszajonz/Desktop/oui/switch/hombrew/shop/application/include/nlohmann/detail/conversions/to_chars.hpp \
- /Users/mathiaszajonz/Desktop/oui/switch/hombrew/shop/application/include/nlohmann/ordered_map.hpp \
- /Users/mathiaszajonz/Desktop/oui/switch/hombrew/shop/application/include/nlohmann/detail/macro_unscope.hpp \
- /Users/mathiaszajonz/Desktop/oui/switch/hombrew/shop/application/include/nlohmann/thirdparty/hedley/hedley_undef.hpp
-/Users/mathiaszajonz/Desktop/oui/switch/hombrew/shop/application/source/app.hpp:
+ /Users/mathiaszajonz/Desktop/oui/switch/hombrew/shop/application/SWITCHOP/include/nlohmann/json.hpp \
+ /Users/mathiaszajonz/Desktop/oui/switch/hombrew/shop/application/SWITCHOP/include/nlohmann/adl_serializer.hpp \
+ /Users/mathiaszajonz/Desktop/oui/switch/hombrew/shop/application/SWITCHOP/include/nlohmann/detail/abi_macros.hpp \
+ /Users/mathiaszajonz/Desktop/oui/switch/hombrew/shop/application/SWITCHOP/include/nlohmann/detail/conversions/from_json.hpp \
+ /Users/mathiaszajonz/Desktop/oui/switch/hombrew/shop/application/SWITCHOP/include/nlohmann/detail/exceptions.hpp \
+ /Users/mathiaszajonz/Desktop/oui/switch/hombrew/shop/application/SWITCHOP/include/nlohmann/detail/value_t.hpp \
+ /Users/mathiaszajonz/Desktop/oui/switch/hombrew/shop/application/SWITCHOP/include/nlohmann/detail/macro_scope.hpp \
+ /Users/mathiaszajonz/Desktop/oui/switch/hombrew/shop/application/SWITCHOP/include/nlohmann/detail/meta/detected.hpp \
+ /Users/mathiaszajonz/Desktop/oui/switch/hombrew/shop/application/SWITCHOP/include/nlohmann/detail/meta/void_t.hpp \
+ /Users/mathiaszajonz/Desktop/oui/switch/hombrew/shop/application/SWITCHOP/include/nlohmann/thirdparty/hedley/hedley.hpp \
+ /Users/mathiaszajonz/Desktop/oui/switch/hombrew/shop/application/SWITCHOP/include/nlohmann/detail/string_escape.hpp \
+ /Users/mathiaszajonz/Desktop/oui/switch/hombrew/shop/application/SWITCHOP/include/nlohmann/detail/input/position_t.hpp \
+ /Users/mathiaszajonz/Desktop/oui/switch/hombrew/shop/application/SWITCHOP/include/nlohmann/detail/meta/cpp_future.hpp \
+ /Users/mathiaszajonz/Desktop/oui/switch/hombrew/shop/application/SWITCHOP/include/nlohmann/detail/meta/type_traits.hpp \
+ /Users/mathiaszajonz/Desktop/oui/switch/hombrew/shop/application/SWITCHOP/include/nlohmann/detail/iterators/iterator_traits.hpp \
+ /Users/mathiaszajonz/Desktop/oui/switch/hombrew/shop/application/SWITCHOP/include/nlohmann/detail/meta/call_std/begin.hpp \
+ /Users/mathiaszajonz/Desktop/oui/switch/hombrew/shop/application/SWITCHOP/include/nlohmann/detail/meta/call_std/end.hpp \
+ /Users/mathiaszajonz/Desktop/oui/switch/hombrew/shop/application/SWITCHOP/include/nlohmann/json_fwd.hpp \
+ /Users/mathiaszajonz/Desktop/oui/switch/hombrew/shop/application/SWITCHOP/include/nlohmann/detail/string_concat.hpp \
+ /Users/mathiaszajonz/Desktop/oui/switch/hombrew/shop/application/SWITCHOP/include/nlohmann/detail/meta/identity_tag.hpp \
+ /Users/mathiaszajonz/Desktop/oui/switch/hombrew/shop/application/SWITCHOP/include/nlohmann/detail/meta/std_fs.hpp \
+ /Users/mathiaszajonz/Desktop/oui/switch/hombrew/shop/application/SWITCHOP/include/nlohmann/detail/conversions/to_json.hpp \
+ /Users/mathiaszajonz/Desktop/oui/switch/hombrew/shop/application/SWITCHOP/include/nlohmann/detail/iterators/iteration_proxy.hpp \
+ /Users/mathiaszajonz/Desktop/oui/switch/hombrew/shop/application/SWITCHOP/include/nlohmann/detail/string_utils.hpp \
+ /Users/mathiaszajonz/Desktop/oui/switch/hombrew/shop/application/SWITCHOP/include/nlohmann/byte_container_with_subtype.hpp \
+ /Users/mathiaszajonz/Desktop/oui/switch/hombrew/shop/application/SWITCHOP/include/nlohmann/detail/hash.hpp \
+ /Users/mathiaszajonz/Desktop/oui/switch/hombrew/shop/application/SWITCHOP/include/nlohmann/detail/input/binary_reader.hpp \
+ /Users/mathiaszajonz/Desktop/oui/switch/hombrew/shop/application/SWITCHOP/include/nlohmann/detail/input/input_adapters.hpp \
+ /Users/mathiaszajonz/Desktop/oui/switch/hombrew/shop/application/SWITCHOP/include/nlohmann/detail/input/json_sax.hpp \
+ /Users/mathiaszajonz/Desktop/oui/switch/hombrew/shop/application/SWITCHOP/include/nlohmann/detail/input/lexer.hpp \
+ /Users/mathiaszajonz/Desktop/oui/switch/hombrew/shop/application/SWITCHOP/include/nlohmann/detail/meta/is_sax.hpp \
+ /Users/mathiaszajonz/Desktop/oui/switch/hombrew/shop/application/SWITCHOP/include/nlohmann/detail/input/parser.hpp \
+ /Users/mathiaszajonz/Desktop/oui/switch/hombrew/shop/application/SWITCHOP/include/nlohmann/detail/iterators/internal_iterator.hpp \
+ /Users/mathiaszajonz/Desktop/oui/switch/hombrew/shop/application/SWITCHOP/include/nlohmann/detail/iterators/primitive_iterator.hpp \
+ /Users/mathiaszajonz/Desktop/oui/switch/hombrew/shop/application/SWITCHOP/include/nlohmann/detail/iterators/iter_impl.hpp \
+ /Users/mathiaszajonz/Desktop/oui/switch/hombrew/shop/application/SWITCHOP/include/nlohmann/detail/iterators/json_reverse_iterator.hpp \
+ /Users/mathiaszajonz/Desktop/oui/switch/hombrew/shop/application/SWITCHOP/include/nlohmann/detail/json_custom_base_class.hpp \
+ /Users/mathiaszajonz/Desktop/oui/switch/hombrew/shop/application/SWITCHOP/include/nlohmann/detail/json_pointer.hpp \
+ /Users/mathiaszajonz/Desktop/oui/switch/hombrew/shop/application/SWITCHOP/include/nlohmann/detail/json_ref.hpp \
+ /Users/mathiaszajonz/Desktop/oui/switch/hombrew/shop/application/SWITCHOP/include/nlohmann/detail/output/binary_writer.hpp \
+ /Users/mathiaszajonz/Desktop/oui/switch/hombrew/shop/application/SWITCHOP/include/nlohmann/detail/output/output_adapters.hpp \
+ /Users/mathiaszajonz/Desktop/oui/switch/hombrew/shop/application/SWITCHOP/include/nlohmann/detail/output/serializer.hpp \
+ /Users/mathiaszajonz/Desktop/oui/switch/hombrew/shop/application/SWITCHOP/include/nlohmann/detail/conversions/to_chars.hpp \
+ /Users/mathiaszajonz/Desktop/oui/switch/hombrew/shop/application/SWITCHOP/include/nlohmann/ordered_map.hpp \
+ /Users/mathiaszajonz/Desktop/oui/switch/hombrew/shop/application/SWITCHOP/include/nlohmann/detail/macro_unscope.hpp \
+ /Users/mathiaszajonz/Desktop/oui/switch/hombrew/shop/application/SWITCHOP/include/nlohmann/thirdparty/hedley/hedley_undef.hpp
+/Users/mathiaszajonz/Desktop/oui/switch/hombrew/shop/application/SWITCHOP/source/app.hpp:
 /opt/devkitpro/libnx/include/switch.h:
 /opt/devkitpro/libnx/include/switch/types.h:
 /opt/devkitpro/libnx/include/switch/result.h:
@@ -522,49 +522,49 @@ settings.o: \
 /opt/devkitpro/portlibs/switch/include/curl/multi.h:
 /opt/devkitpro/portlibs/switch/include/curl/curl.h:
 /opt/devkitpro/portlibs/switch/include/curl/urlapi.h:
-/Users/mathiaszajonz/Desktop/oui/switch/hombrew/shop/application/include/nlohmann/json.hpp:
-/Users/mathiaszajonz/Desktop/oui/switch/hombrew/shop/application/include/nlohmann/adl_serializer.hpp:
-/Users/mathiaszajonz/Desktop/oui/switch/hombrew/shop/application/include/nlohmann/detail/abi_macros.hpp:
-/Users/mathiaszajonz/Desktop/oui/switch/hombrew/shop/application/include/nlohmann/detail/conversions/from_json.hpp:
-/Users/mathiaszajonz/Desktop/oui/switch/hombrew/shop/application/include/nlohmann/detail/exceptions.hpp:
-/Users/mathiaszajonz/Desktop/oui/switch/hombrew/shop/application/include/nlohmann/detail/value_t.hpp:
-/Users/mathiaszajonz/Desktop/oui/switch/hombrew/shop/application/include/nlohmann/detail/macro_scope.hpp:
-/Users/mathiaszajonz/Desktop/oui/switch/hombrew/shop/application/include/nlohmann/detail/meta/detected.hpp:
-/Users/mathiaszajonz/Desktop/oui/switch/hombrew/shop/application/include/nlohmann/detail/meta/void_t.hpp:
-/Users/mathiaszajonz/Desktop/oui/switch/hombrew/shop/application/include/nlohmann/thirdparty/hedley/hedley.hpp:
-/Users/mathiaszajonz/Desktop/oui/switch/hombrew/shop/application/include/nlohmann/detail/string_escape.hpp:
-/Users/mathiaszajonz/Desktop/oui/switch/hombrew/shop/application/include/nlohmann/detail/input/position_t.hpp:
-/Users/mathiaszajonz/Desktop/oui/switch/hombrew/shop/application/include/nlohmann/detail/meta/cpp_future.hpp:
-/Users/mathiaszajonz/Desktop/oui/switch/hombrew/shop/application/include/nlohmann/detail/meta/type_traits.hpp:
-/Users/mathiaszajonz/Desktop/oui/switch/hombrew/shop/application/include/nlohmann/detail/iterators/iterator_traits.hpp:
-/Users/mathiaszajonz/Desktop/oui/switch/hombrew/shop/application/include/nlohmann/detail/meta/call_std/begin.hpp:
-/Users/mathiaszajonz/Desktop/oui/switch/hombrew/shop/application/include/nlohmann/detail/meta/call_std/end.hpp:
-/Users/mathiaszajonz/Desktop/oui/switch/hombrew/shop/application/include/nlohmann/json_fwd.hpp:
-/Users/mathiaszajonz/Desktop/oui/switch/hombrew/shop/application/include/nlohmann/detail/string_concat.hpp:
-/Users/mathiaszajonz/Desktop/oui/switch/hombrew/shop/application/include/nlohmann/detail/meta/identity_tag.hpp:
-/Users/mathiaszajonz/Desktop/oui/switch/hombrew/shop/application/include/nlohmann/detail/meta/std_fs.hpp:
-/Users/mathiaszajonz/Desktop/oui/switch/hombrew/shop/application/include/nlohmann/detail/conversions/to_json.hpp:
-/Users/mathiaszajonz/Desktop/oui/switch/hombrew/shop/application/include/nlohmann/detail/iterators/iteration_proxy.hpp:
-/Users/mathiaszajonz/Desktop/oui/switch/hombrew/shop/application/include/nlohmann/detail/string_utils.hpp:
-/Users/mathiaszajonz/Desktop/oui/switch/hombrew/shop/application/include/nlohmann/byte_container_with_subtype.hpp:
-/Users/mathiaszajonz/Desktop/oui/switch/hombrew/shop/application/include/nlohmann/detail/hash.hpp:
-/Users/mathiaszajonz/Desktop/oui/switch/hombrew/shop/application/include/nlohmann/detail/input/binary_reader.hpp:
-/Users/mathiaszajonz/Desktop/oui/switch/hombrew/shop/application/include/nlohmann/detail/input/input_adapters.hpp:
-/Users/mathiaszajonz/Desktop/oui/switch/hombrew/shop/application/include/nlohmann/detail/input/json_sax.hpp:
-/Users/mathiaszajonz/Desktop/oui/switch/hombrew/shop/application/include/nlohmann/detail/input/lexer.hpp:
-/Users/mathiaszajonz/Desktop/oui/switch/hombrew/shop/application/include/nlohmann/detail/meta/is_sax.hpp:
-/Users/mathiaszajonz/Desktop/oui/switch/hombrew/shop/application/include/nlohmann/detail/input/parser.hpp:
-/Users/mathiaszajonz/Desktop/oui/switch/hombrew/shop/application/include/nlohmann/detail/iterators/internal_iterator.hpp:
-/Users/mathiaszajonz/Desktop/oui/switch/hombrew/shop/application/include/nlohmann/detail/iterators/primitive_iterator.hpp:
-/Users/mathiaszajonz/Desktop/oui/switch/hombrew/shop/application/include/nlohmann/detail/iterators/iter_impl.hpp:
-/Users/mathiaszajonz/Desktop/oui/switch/hombrew/shop/application/include/nlohmann/detail/iterators/json_reverse_iterator.hpp:
-/Users/mathiaszajonz/Desktop/oui/switch/hombrew/shop/application/include/nlohmann/detail/json_custom_base_class.hpp:
-/Users/mathiaszajonz/Desktop/oui/switch/hombrew/shop/application/include/nlohmann/detail/json_pointer.hpp:
-/Users/mathiaszajonz/Desktop/oui/switch/hombrew/shop/application/include/nlohmann/detail/json_ref.hpp:
-/Users/mathiaszajonz/Desktop/oui/switch/hombrew/shop/application/include/nlohmann/detail/output/binary_writer.hpp:
-/Users/mathiaszajonz/Desktop/oui/switch/hombrew/shop/application/include/nlohmann/detail/output/output_adapters.hpp:
-/Users/mathiaszajonz/Desktop/oui/switch/hombrew/shop/application/include/nlohmann/detail/output/serializer.hpp:
-/Users/mathiaszajonz/Desktop/oui/switch/hombrew/shop/application/include/nlohmann/detail/conversions/to_chars.hpp:
-/Users/mathiaszajonz/Desktop/oui/switch/hombrew/shop/application/include/nlohmann/ordered_map.hpp:
-/Users/mathiaszajonz/Desktop/oui/switch/hombrew/shop/application/include/nlohmann/detail/macro_unscope.hpp:
-/Users/mathiaszajonz/Desktop/oui/switch/hombrew/shop/application/include/nlohmann/thirdparty/hedley/hedley_undef.hpp:
+/Users/mathiaszajonz/Desktop/oui/switch/hombrew/shop/application/SWITCHOP/include/nlohmann/json.hpp:
+/Users/mathiaszajonz/Desktop/oui/switch/hombrew/shop/application/SWITCHOP/include/nlohmann/adl_serializer.hpp:
+/Users/mathiaszajonz/Desktop/oui/switch/hombrew/shop/application/SWITCHOP/include/nlohmann/detail/abi_macros.hpp:
+/Users/mathiaszajonz/Desktop/oui/switch/hombrew/shop/application/SWITCHOP/include/nlohmann/detail/conversions/from_json.hpp:
+/Users/mathiaszajonz/Desktop/oui/switch/hombrew/shop/application/SWITCHOP/include/nlohmann/detail/exceptions.hpp:
+/Users/mathiaszajonz/Desktop/oui/switch/hombrew/shop/application/SWITCHOP/include/nlohmann/detail/value_t.hpp:
+/Users/mathiaszajonz/Desktop/oui/switch/hombrew/shop/application/SWITCHOP/include/nlohmann/detail/macro_scope.hpp:
+/Users/mathiaszajonz/Desktop/oui/switch/hombrew/shop/application/SWITCHOP/include/nlohmann/detail/meta/detected.hpp:
+/Users/mathiaszajonz/Desktop/oui/switch/hombrew/shop/application/SWITCHOP/include/nlohmann/detail/meta/void_t.hpp:
+/Users/mathiaszajonz/Desktop/oui/switch/hombrew/shop/application/SWITCHOP/include/nlohmann/thirdparty/hedley/hedley.hpp:
+/Users/mathiaszajonz/Desktop/oui/switch/hombrew/shop/application/SWITCHOP/include/nlohmann/detail/string_escape.hpp:
+/Users/mathiaszajonz/Desktop/oui/switch/hombrew/shop/application/SWITCHOP/include/nlohmann/detail/input/position_t.hpp:
+/Users/mathiaszajonz/Desktop/oui/switch/hombrew/shop/application/SWITCHOP/include/nlohmann/detail/meta/cpp_future.hpp:
+/Users/mathiaszajonz/Desktop/oui/switch/hombrew/shop/application/SWITCHOP/include/nlohmann/detail/meta/type_traits.hpp:
+/Users/mathiaszajonz/Desktop/oui/switch/hombrew/shop/application/SWITCHOP/include/nlohmann/detail/iterators/iterator_traits.hpp:
+/Users/mathiaszajonz/Desktop/oui/switch/hombrew/shop/application/SWITCHOP/include/nlohmann/detail/meta/call_std/begin.hpp:
+/Users/mathiaszajonz/Desktop/oui/switch/hombrew/shop/application/SWITCHOP/include/nlohmann/detail/meta/call_std/end.hpp:
+/Users/mathiaszajonz/Desktop/oui/switch/hombrew/shop/application/SWITCHOP/include/nlohmann/json_fwd.hpp:
+/Users/mathiaszajonz/Desktop/oui/switch/hombrew/shop/application/SWITCHOP/include/nlohmann/detail/string_concat.hpp:
+/Users/mathiaszajonz/Desktop/oui/switch/hombrew/shop/application/SWITCHOP/include/nlohmann/detail/meta/identity_tag.hpp:
+/Users/mathiaszajonz/Desktop/oui/switch/hombrew/shop/application/SWITCHOP/include/nlohmann/detail/meta/std_fs.hpp:
+/Users/mathiaszajonz/Desktop/oui/switch/hombrew/shop/application/SWITCHOP/include/nlohmann/detail/conversions/to_json.hpp:
+/Users/mathiaszajonz/Desktop/oui/switch/hombrew/shop/application/SWITCHOP/include/nlohmann/detail/iterators/iteration_proxy.hpp:
+/Users/mathiaszajonz/Desktop/oui/switch/hombrew/shop/application/SWITCHOP/include/nlohmann/detail/string_utils.hpp:
+/Users/mathiaszajonz/Desktop/oui/switch/hombrew/shop/application/SWITCHOP/include/nlohmann/byte_container_with_subtype.hpp:
+/Users/mathiaszajonz/Desktop/oui/switch/hombrew/shop/application/SWITCHOP/include/nlohmann/detail/hash.hpp:
+/Users/mathiaszajonz/Desktop/oui/switch/hombrew/shop/application/SWITCHOP/include/nlohmann/detail/input/binary_reader.hpp:
+/Users/mathiaszajonz/Desktop/oui/switch/hombrew/shop/application/SWITCHOP/include/nlohmann/detail/input/input_adapters.hpp:
+/Users/mathiaszajonz/Desktop/oui/switch/hombrew/shop/application/SWITCHOP/include/nlohmann/detail/input/json_sax.hpp:
+/Users/mathiaszajonz/Desktop/oui/switch/hombrew/shop/application/SWITCHOP/include/nlohmann/detail/input/lexer.hpp:
+/Users/mathiaszajonz/Desktop/oui/switch/hombrew/shop/application/SWITCHOP/include/nlohmann/detail/meta/is_sax.hpp:
+/Users/mathiaszajonz/Desktop/oui/switch/hombrew/shop/application/SWITCHOP/include/nlohmann/detail/input/parser.hpp:
+/Users/mathiaszajonz/Desktop/oui/switch/hombrew/shop/application/SWITCHOP/include/nlohmann/detail/iterators/internal_iterator.hpp:
+/Users/mathiaszajonz/Desktop/oui/switch/hombrew/shop/application/SWITCHOP/include/nlohmann/detail/iterators/primitive_iterator.hpp:
+/Users/mathiaszajonz/Desktop/oui/switch/hombrew/shop/application/SWITCHOP/include/nlohmann/detail/iterators/iter_impl.hpp:
+/Users/mathiaszajonz/Desktop/oui/switch/hombrew/shop/application/SWITCHOP/include/nlohmann/detail/iterators/json_reverse_iterator.hpp:
+/Users/mathiaszajonz/Desktop/oui/switch/hombrew/shop/application/SWITCHOP/include/nlohmann/detail/json_custom_base_class.hpp:
+/Users/mathiaszajonz/Desktop/oui/switch/hombrew/shop/application/SWITCHOP/include/nlohmann/detail/json_pointer.hpp:
+/Users/mathiaszajonz/Desktop/oui/switch/hombrew/shop/application/SWITCHOP/include/nlohmann/detail/json_ref.hpp:
+/Users/mathiaszajonz/Desktop/oui/switch/hombrew/shop/application/SWITCHOP/include/nlohmann/detail/output/binary_writer.hpp:
+/Users/mathiaszajonz/Desktop/oui/switch/hombrew/shop/application/SWITCHOP/include/nlohmann/detail/output/output_adapters.hpp:
+/Users/mathiaszajonz/Desktop/oui/switch/hombrew/shop/application/SWITCHOP/include/nlohmann/detail/output/serializer.hpp:
+/Users/mathiaszajonz/Desktop/oui/switch/hombrew/shop/application/SWITCHOP/include/nlohmann/detail/conversions/to_chars.hpp:
+/Users/mathiaszajonz/Desktop/oui/switch/hombrew/shop/application/SWITCHOP/include/nlohmann/ordered_map.hpp:
+/Users/mathiaszajonz/Desktop/oui/switch/hombrew/shop/application/SWITCHOP/include/nlohmann/detail/macro_unscope.hpp:
+/Users/mathiaszajonz/Desktop/oui/switch/hombrew/shop/application/SWITCHOP/include/nlohmann/thirdparty/hedley/hedley_undef.hpp:

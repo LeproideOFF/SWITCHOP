@@ -141,7 +141,7 @@ void drawText(string text, int x, int y, TTF_Font* font, SDL_Color c, bool cente
 
 void drawSystemBar() {
     drawRoundedBox(0, 0, 1280, 60, 0, C_HEADER);
-    drawText("ULTIMATE SHOP", 40, 15, fontMedium, C_TEXT);
+    drawText("SWITCHOP", 40, 15, fontMedium, C_TEXT);
     drawText(to_string(currentUser.points) + " " + TR("PTS"), 950, 15, fontMedium, C_ACCENT);
     drawText(getFreeSpace(), 1100, 15, fontMedium, C_TEXT_DIM);
 }
