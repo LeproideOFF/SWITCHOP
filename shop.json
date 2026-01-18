@@ -1,0 +1,31 @@
+{
+  "theme": {
+    "bg": [10, 10, 20],
+    "header": [0, 80, 200],
+    "text": [255, 255, 255],
+    "tab_active": [0, 120, 255],
+    "alert_bg": [255, 200, 0]
+  },
+  "music_url": "http://31.37.87.78/shop/music.mp3",
+  "announcement": "🎵 Musique dynamique activée !",
+"apps": [
+    {
+      "name": "Minecraft BASE",
+      "url": "http://31.37.87.78/shop/3.nsp",
+      "category": "Jeu",
+      "desc": "Le jeu de construction et d'aventure ultime. Explorez des mondes infinis et construisez tout ce qui vous passe par la tête, du plus petit abri au plus grand château."
+    },
+    {
+      "name": "Mario vs DK Update",
+      "url": "http://31.37.87.78/shop/2.nsp",
+      "category": "Mise à jour",
+      "desc": "Mise à jour v1.0.1 pour Mario vs Donkey Kong. Corrige des bugs mineurs et améliore la stabilité du jeu. Nécessite le jeu de base."
+    },
+    {
+      "name": "Mario vs Donkey Kong",
+      "url": "http://31.37.87.78/shop/1.nsp",
+      "category": "Jeu",
+      "desc": "La rivalité reprend de plus belle ! Donkey Kong a volé tous les jouets mini-Mario. À vous de résoudre des énigmes de plateforme pour les récupérer."
+    }
+  ]
+}
