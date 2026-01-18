@@ -3,19 +3,17 @@
 
 string loginMessage = "";
 
-// Structure pour stocker les données en RAM avant écriture sur SD
 struct MemoryStruct {
     char *memory;
     size_t size;
 };
 
-// Callback pour l'écriture en mémoire vive
 static size_t WriteMemoryCallback(void *contents, size_t size, size_t nmemb, void *userp) {
     size_t realsize = size * nmemb;
     struct MemoryStruct *mem = (struct MemoryStruct *)userp;
 
     char *ptr = (char*)realloc(mem->memory, mem->size + realsize + 1);
-    if(!ptr) return 0; // Plus de mémoire disponible !
+    if(!ptr) return 0;
 
     mem->memory = ptr;
     memcpy(&(mem->memory[mem->size]), contents, realsize);
@@ -25,7 +23,6 @@ static size_t WriteMemoryCallback(void *contents, size_t size, size_t nmemb, voi
     return realsize;
 }
 
-// Version standard pour les strings courtes (JSON)
 static size_t WriteMem(void *contents, size_t size, size_t nmemb, void *userp) {
     ((string*)userp)->append((char*)contents, size * nmemb);
     return size * nmemb;
@@ -54,7 +51,6 @@ string postJson(string endpoint, json data) {
         string js = data.dump();
         struct curl_slist *h = curl_slist_append(NULL, "Content-Type: application/json");
         
-        // Utilisation du port 3000
         string full_url = string(SERVER_URL) + endpoint;
         
         curl_easy_setopt(curl, CURLOPT_URL, full_url.c_str());
@@ -131,15 +127,35 @@ string fetchJson(string endpoint) {
     }
     return buffer;
 }
+
 void sendRating(string appName, int score) {
     json p;
     p["deviceId"] = currentUser.deviceId;
     p["appName"] = appName;
     p["rating"] = score;
-    // Envoi au serveur sur le port 3000
     postJson("/shop/rate", p);
 }
-// FONCTION DE TELECHARGEMENT OPTIMISÉE (RAM BUFFER)
+
+void toggleFavorite(string appName) {
+    json p;
+    p["deviceId"] = currentUser.deviceId;
+    p["appName"] = appName;
+    postJson("/shop/favorite", p);
+}
+
+void completeMission(int missionId) {
+    json p;
+    p["deviceId"] = currentUser.deviceId;
+    p["missionId"] = missionId;
+    string res = postJson("/shop/mission/complete", p);
+    if(!res.empty()) {
+        try {
+            auto j = json::parse(res);
+            if(j["success"]) currentUser.points = j["new_points"];
+        } catch(...) {}
+    }
+}
+
 void downloadFile(const char* url, const char* path) {
     CURL *curl = curl_easy_init();
     if (curl) {
@@ -152,7 +168,6 @@ void downloadFile(const char* url, const char* path) {
         curl_easy_setopt(curl, CURLOPT_WRITEFUNCTION, WriteMemoryCallback);
         curl_easy_setopt(curl, CURLOPT_WRITEDATA, (void *)&chunk);
         
-        // Facultatif : barre de progression native
         ProgressData d = {0, 0, 0};
         curl_easy_setopt(curl, CURLOPT_XFERINFOFUNCTION, progress_callback);
         curl_easy_setopt(curl, CURLOPT_XFERINFODATA, &d);
@@ -161,7 +176,6 @@ void downloadFile(const char* url, const char* path) {
         CURLcode res = curl_easy_perform(curl);
 
         if(res == CURLE_OK) {
-            // Une fois le fichier entièrement en RAM, on le vide sur la carte SD d'un coup
             FILE *fp = fopen(path, "wb");
             if(fp) {
                 fwrite(chunk.memory, 1, chunk.size, fp);
@@ -176,7 +190,6 @@ void downloadFile(const char* url, const char* path) {
 
 bool installNSP(HomebrewApp app) {
     ncmInitialize();
-    // On télécharge d'abord le NSP via le buffer RAM avant l'installation
     downloadFile(app.url.c_str(), "sdmc:/switch/tmp.nsp");
     ncmExit();
     return true;

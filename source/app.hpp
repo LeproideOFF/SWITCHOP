@@ -42,16 +42,45 @@ extern SDL_Color C_BG, C_HEADER, C_TEXT, C_ACCENT, C_CARD_BG, C_TEXT_DIM, C_BTN_
 
 struct NewsItem { string title; string content; };
 
-// STRUCTURE CORRIGEE (Une seule fois)
 struct HomebrewApp {
-    string name; string url; string category; string description; string patchNotes;
-    int cost; SDL_Color color; char iconLetter; bool isNew; int downloads;
-    float rating; // Note moyenne
-    int voteCount; // Nombre de votes (pour faire plus pro)
+    string name; 
+    string url; 
+    string category; 
+    string description; 
+    string patchNotes;
+    int cost; 
+    int downloads;
+    int voteCount;
+    float rating;
+    SDL_Color color; 
+    char iconLetter; 
+    bool isNew; 
+    bool isFavorite;
 };
 
-// --- FILE D'ATTENTE ---
+struct DailyMission {
+    string title;
+    string description;
+    int reward;
+    int progress;
+    int target;
+    bool completed;
+};
+
+struct DownloadHistory {
+    string appName;
+    string date;
+    int cost;
+};
+
+enum SortMode { SORT_NAME, SORT_PRICE, SORT_RATING, SORT_DOWNLOADS };
+enum FilterMode { FILTER_ALL, FILTER_FREE, FILTER_PAID };
+
 extern vector<HomebrewApp> downloadQueue;
+extern vector<DailyMission> dailyMissions;
+extern vector<DownloadHistory> downloadHistory;
+extern SortMode currentSort;
+extern FilterMode currentFilter;
 
 struct Achievement { string title; bool unlocked; };
 extern vector<Achievement> myAchievements;
@@ -73,7 +102,11 @@ enum AppState {
     STATE_EXTRAS, 
     STATE_LEADERBOARD, 
     STATE_REDEEM,
-    STATE_QUEUE 
+    STATE_QUEUE,
+    STATE_MISSIONS,
+    STATE_HISTORY,
+    STATE_FAVORITES,
+    STATE_RATE_APP
 };
 
 extern SDL_Window* window;
@@ -113,7 +146,9 @@ void loginUser();
 bool buyApp(HomebrewApp app);
 void sendClickPoint();
 void sendRedeem(string code);
-void sendRating(string appName, int score); // Prototype ajouté ici
+void sendRating(string appName, int score);
+void toggleFavorite(string appName);
+void completeMission(int missionId);
 vector<LeaderboardEntry> fetchLeaderboard();
 string fetchJson(string endpoint);
 void downloadFile(const char* url, const char* path);
