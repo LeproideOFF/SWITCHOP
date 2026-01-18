@@ -490,7 +490,7 @@ int main(int argc, char **argv) {
                     totalCost += downloadQueue[i].cost;
                 }
                 
-                drawText("Total: " + to_string(totalCost) + " points", 640, 450, fontMedium, C_ACCENT, true);
+                drawText("Total: " + to_string(totalCost) + " points (WIP)", 640, 450, fontMedium, C_ACCENT, true);
                 
                 int bX = 440, bY = 520, bW = 400, bH = 60;
                 

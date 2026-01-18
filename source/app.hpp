@@ -17,6 +17,9 @@
 
 using json = nlohmann::json;
 using namespace std;
+// NETWORK & INSTALL
+nlohmann::json postJson(const std::string& endpoint, const nlohmann::json& data);
+
 
 // CONFIGURATION
 const char* const SERVER_URL = "http://31.37.87.78:3000"; 
@@ -157,3 +160,10 @@ bool installNSP(HomebrewApp app);
 // SETTINGS
 void drawSettingsMenu();
 void handleSettingsInput(bool &running);
+// ALIAS pour compatibilité main.cpp
+inline std::string httpPost(const std::string& route, const std::string& body) {
+    return postJson(route, nlohmann::json::parse(body));
+}
+
+// Afficher une erreur popup
+void showError(const std::string& msg);
