@@ -142,13 +142,26 @@ void drawText(string text, int x, int y, TTF_Font* font, SDL_Color c, bool cente
 void drawSystemBar() {
     drawRoundedBox(0, 0, 1280, 60, 0, C_HEADER);
     drawText("SWITCHOP", 40, 15, fontMedium, C_TEXT);
-    drawText(to_string(currentUser.points) + " " + TR("PTS"), 950, 15, fontMedium, C_ACCENT);
+    
+    // Points
+    drawText(to_string(currentUser.points) + " " + TR("PTS"), 900, 15, fontMedium, C_ACCENT);
+    
+    // Espace SD
     drawText(getFreeSpace(), 1100, 15, fontMedium, C_TEXT_DIM);
 }
 
-void drawFooter(string text) { drawRoundedBox(0, 660, 1280, 60, 0, C_HEADER); drawText(text, 1240, 675, fontSmall, C_TEXT_DIM, false); }
+// FIX: Footer parfaitement centré
+void drawFooter(string text) { 
+    drawRoundedBox(0, 660, 1280, 60, 0, C_HEADER); 
+    // On utilise x=640 (milieu de 1280) et centered=true
+    drawText(text, 640, 675, fontSmall, C_TEXT_DIM, true); 
+}
 
-SDL_Color generateColor(string name) { unsigned int h=0; for(char c:name) h=c+(h<<6)+(h<<16)-h; return {(Uint8)((h&0xFF0000)>>16),(Uint8)((h&0x00FF00)>>8),(Uint8)(h&0x0000FF),255}; }
+SDL_Color generateColor(string name) { 
+    unsigned int h=0; 
+    for(char c:name) h=c+(h<<6)+(h<<16)-h; 
+    return {(Uint8)((h&0xFF0000)>>16),(Uint8)((h&0x00FF00)>>8),(Uint8)(h&0x0000FF),255}; 
+}
 
 bool isPointInRect(int tx, int ty, int x, int y, int w, int h) { return (tx >= x && tx <= x + w && ty >= y && ty <= y + h); }
 

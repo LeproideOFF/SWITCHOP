@@ -18,6 +18,7 @@
 using json = nlohmann::json;
 using namespace std;
 
+// CONFIGURATION
 const char* const SERVER_URL = "http://31.37.87.78:3000"; 
 const char* const FONT_PATH = "sdmc:/switch/font.ttf";
 
@@ -40,10 +41,17 @@ extern User currentUser;
 extern SDL_Color C_BG, C_HEADER, C_TEXT, C_ACCENT, C_CARD_BG, C_TEXT_DIM, C_BTN_TEXT, C_NEW_TAG;
 
 struct NewsItem { string title; string content; };
+
+// STRUCTURE CORRIGEE (Une seule fois)
 struct HomebrewApp {
     string name; string url; string category; string description; string patchNotes;
     int cost; SDL_Color color; char iconLetter; bool isNew; int downloads;
+    float rating; // Note moyenne
+    int voteCount; // Nombre de votes (pour faire plus pro)
 };
+
+// --- FILE D'ATTENTE ---
+extern vector<HomebrewApp> downloadQueue;
 
 struct Achievement { string title; bool unlocked; };
 extern vector<Achievement> myAchievements;
@@ -57,7 +65,16 @@ struct ProgressData {
 struct LeaderboardEntry { string id; int points; };
 struct Particle { float x, y, vx, vy; int life; SDL_Color color; };
 
-enum AppState { STATE_DASHBOARD, STATE_DETAILS, STATE_SETTINGS, STATE_NEWS_DETAILS, STATE_EXTRAS, STATE_LEADERBOARD, STATE_REDEEM };
+enum AppState { 
+    STATE_DASHBOARD, 
+    STATE_DETAILS, 
+    STATE_SETTINGS, 
+    STATE_NEWS_DETAILS, 
+    STATE_EXTRAS, 
+    STATE_LEADERBOARD, 
+    STATE_REDEEM,
+    STATE_QUEUE 
+};
 
 extern SDL_Window* window;
 extern SDL_Renderer* renderer;
@@ -96,6 +113,7 @@ void loginUser();
 bool buyApp(HomebrewApp app);
 void sendClickPoint();
 void sendRedeem(string code);
+void sendRating(string appName, int score); // Prototype ajouté ici
 vector<LeaderboardEntry> fetchLeaderboard();
 string fetchJson(string endpoint);
 void downloadFile(const char* url, const char* path);
